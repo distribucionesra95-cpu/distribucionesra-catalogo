@@ -1,0 +1,174 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #fff;
+    color: #000;
+}
+
+/* ===== Portada con logo ===== */
+.portada {
+    background-color: #000; /* Fondo negro */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* ===== Secciones de categorías ===== */
+.categoria {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.categoria h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    border-bottom: 3px solid #B8860B;
+    display: inline-block;
+}
+
+/* ===== Productos ===== */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)  minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Todas las imágenes del mismo tamaño */
+.producto img {
+    width: 600PX;
+    height: 600px; /* altura fija */
+    object-fit: cover; /* recorta y centra */
+    display: block;
+}
+
+/* ===== Info de los productos ===== */
+.info {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .categoria h2 {
+        font-size: 1.5rem;
+    }
+    .producto img {
+        height: 200px;
+    }
+}
+.redes {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.enlaces-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre enlaces */
+    flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
+}
+
+.enlaces-redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.enlaces-redes a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+}
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+nav {
+  background-color: #000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #000;
+}
+main {
+  padding: 20px;
+}
+
